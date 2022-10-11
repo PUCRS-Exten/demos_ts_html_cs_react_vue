@@ -5,6 +5,8 @@ abstract class Cliente {
     public get nome(){
         return this._nome;
     }
+
+    public abstract getMensalidade(): number;
 }
 
 class ClienteFisico extends Cliente{

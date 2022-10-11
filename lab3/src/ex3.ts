@@ -1,10 +1,5 @@
 class Moeda {
-    private _valor: number;
-    private _nome: string;
-
-    constructor(v: number, n: string) {
-        this._valor = v;
-        this._nome = n;
+    constructor(private _valor: number, private _nome: string) {
     }
 
     public get valor(){
