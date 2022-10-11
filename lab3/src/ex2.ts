@@ -41,3 +41,5 @@ cofre.adicionar(new Moeda(15, "Real"));
 cofre.adicionar(new Moeda(20, "Real"));
 
 console.log(cofre.calcularTotal());
+
+console.log(JSON.stringify(cofre));
