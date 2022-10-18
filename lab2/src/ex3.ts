@@ -1,4 +1,4 @@
-function myMin(x: number, y:number) : number {
+function myMin(x: number, y: number): number  {
     let res: number = x;
 
     if (y < x)

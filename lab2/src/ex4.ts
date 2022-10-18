@@ -25,3 +25,9 @@ console.log("2 ** 16? %d", myPowRec(2, 16));
 
 console.log("8 ** 2? %d", myPowIter(8, 2));
 console.log("8 ** 2? %d", myPowRec(8, 2));
+
+console.log("3 ** 24? %d", myPowIter(3, 24));
+console.log("3 ** 24? %d", myPowRec(3, 24));
+
+console.log("3 ** 150? %d", myPowIter(3, 150));
+console.log("3 ** 150? %d", myPowRec(3, 150));
