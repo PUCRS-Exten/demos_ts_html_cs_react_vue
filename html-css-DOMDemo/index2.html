@@ -15,6 +15,12 @@
             // Adds it to the <body> tag
             document.body.appendChild(img);
         }
+
+        function show_parag(texto) {
+            var parag = document.createElement("p");
+            parag.innerHTML = "Meu novo parágrafo";
+            document.body.appendChild(parag);
+        }
     </script>
 
 
@@ -22,8 +28,12 @@
 </head>
 
 <body>
-    <button onclick="show_image ('dog.jpg',	110,110, 'Stella');">
+    <button onclick="show_image ('imagem/dog.jpg',	110,110, 'Stella');">
         Display an image!
+    </button>
+
+    <button onclick="show_parag ('Texto do click!');">
+        Mostra um par!
     </button>
 </body>
 
