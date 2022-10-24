@@ -39,13 +39,11 @@ function MyExp() {
 // Expressões em JSX com multilinhas - parênteses
 function MyMultLinhas() {
   return (
-    (
       <ul>
         <li>Apples</li>
         <li>Bananas</li>
         <li>Cherries</li>
       </ul>
-    )
   );
 }
 
@@ -177,7 +175,7 @@ export default function MyApp() {
   return (
     <>
       <h1>Welcome to my app</h1>
-      {/* <MyExp />
+      <MyExp />
       <MyMultLinhas />
       <MyButton />
       <MyTop />
@@ -186,10 +184,10 @@ export default function MyApp() {
       <MyClassName />
       <MyIf1 />
       <MyIf2 />
-      <MyUseProps name="Joao" />
+      <MyUseProps name="Maria" />
       <Garage />
       <MyLista />
-      <Football /> */}
+      <Football />
     </>
   );
 }
