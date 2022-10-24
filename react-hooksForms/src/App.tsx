@@ -6,8 +6,8 @@ function FavoriteColor() {
   const [color, setColor] = useState("red");   // desestruturando com duas variáveis. Inicializa o estado
 
   return (
-    <>                                         
-      <h1>My favorite color is {color}!</h1>  
+    <>
+      <h1>My favorite color is {color}!</h1>
       <button                               // Usa o estado
         type="button"
         onClick={() => setColor("blue")}   // Atualiza o estado
@@ -103,13 +103,13 @@ function Contador() {
 }
 
 function MyForm() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Pedro");
 
   return (
     <form>
       <label>Enter your name:
         <input
-          type="text" 
+          type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}  // Função que muda o estado
         />
@@ -127,12 +127,11 @@ function MyForm2() {
     event.preventDefault();
     alert(`The name you entered was: ${name}`);
   }
-
   return (
     <form onSubmit={handleSubmit}>
       <label>Enter your name:
-        <input 
-          type="text" 
+        <input
+          type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -140,6 +139,32 @@ function MyForm2() {
       <input type="submit" />
     </form>
   )
+}
+
+function ContadorTriplo() {
+  const [count, setCount] = useState(0);
+  const [dobro, setDobro] = useState(0);
+  const [metade, setMetade] = useState(0);
+
+
+  return (
+    <div>
+      <p>
+        Você clicou {count} vezes.
+        O dobro de vezes: {dobro}.
+        A metade de vezes: {metade}
+      </p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+      <button onClick={() => setDobro(count * 2)}>
+        Click me
+      </button>
+      <button onClick={() => setMetade(count / 2)}>
+        Click me
+      </button>
+    </div>
+  );
 }
 
 export default function MyApp() {
@@ -153,6 +178,7 @@ export default function MyApp() {
       <Contador />
       <MyForm />
       <MyForm2 /> */}
+      <ContadorTriplo />
     </>
   );
 }
