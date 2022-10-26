@@ -121,9 +121,9 @@ function MyForm() {
 }
 
 function MyForm2() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("inicial");
 
-  const handleSubmit = (event: React.SyntheticEvent) => {
+  const handleSubmit = (event:React.SyntheticEvent) => {
     event.preventDefault();
     alert(`The name you entered was: ${name}`);
   }
@@ -141,31 +141,6 @@ function MyForm2() {
   )
 }
 
-function ContadorTriplo() {
-  const [count, setCount] = useState(0);
-  const [dobro, setDobro] = useState(0);
-  const [metade, setMetade] = useState(0);
-
-
-  return (
-    <div>
-      <p>
-        Você clicou {count} vezes.
-        O dobro de vezes: {dobro}.
-        A metade de vezes: {metade}
-      </p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-      <button onClick={() => setDobro(count * 2)}>
-        Click me
-      </button>
-      <button onClick={() => setMetade(count / 2)}>
-        Click me
-      </button>
-    </div>
-  );
-}
 
 export default function MyApp() {
   return (
@@ -175,10 +150,9 @@ export default function MyApp() {
       <Car />
       <Car2 />
       <Car3 />
-      <Contador />
+      <Contador /> */}
       <MyForm />
-      <MyForm2 /> */}
-      <ContadorTriplo />
+      <MyForm2 />
     </>
   );
 }
