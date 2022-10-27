@@ -59,6 +59,7 @@ function MyApi1() {
   //    É necessário tratar erros da chamada, caso ocorram. Método catch
   //        parâmetro ex - objeto que representa o erro
 
+  console.log("Vai começar");
 
   React.useEffect(() => {
     axios.get<IPost>('https://jsonplaceholder.typicode.com/posts/1', {cancelToken: cancelTokenSource.token,

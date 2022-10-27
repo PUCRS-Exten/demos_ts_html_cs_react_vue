@@ -13,7 +13,7 @@ interface IPost {
 
 // Uma variável default para post, que vai receber o estado do post
 //   pode ser populada após chamada da API
-const defaultPosts: IPost[] = [];
+const defaultPosts: Array<IPost> = [];
 
 
 // Um componente funcional React, que vai consumir a API
