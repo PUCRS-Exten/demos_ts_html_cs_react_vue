@@ -136,7 +136,7 @@ export default function MyApp() {
   return (
     <>
       <h1>Hooks</h1>
-      {/* <MyForm /> */}
+      <MyForm />
       <MyFormSEL />
       <MyFormRAD />
     </>

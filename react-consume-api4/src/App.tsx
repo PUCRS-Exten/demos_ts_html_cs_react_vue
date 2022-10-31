@@ -74,7 +74,7 @@ function MyApi4() {
   console.log("Vai começar");
 
   React.useEffect(() => {
-    axios.get<IUser>('https://jsonplaceholder.typicode.com/users/9/', {
+    axios.get<IUser>('https://jsonplaceholder.typicode.com/users/8/', {
       cancelToken: cancelTokenSource.token,
       headers: { 'Content-Type': 'application/json' },
       timeout: 10000,
