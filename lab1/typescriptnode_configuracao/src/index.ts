@@ -1,2 +1,2 @@
-let saudacao: string = 'Alô, mundo!!!';
+let saudacao: string = 'Alô, alô, mundo!!!';
 console.log(saudacao);
